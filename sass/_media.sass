@@ -1,0 +1,133 @@
+@media (max-width: 1200px)
+    .quote
+        background-size: 100%
+
+@media (max-width: 1140px)
+    .quote__text
+        max-width: 400px
+        font-size: 20px
+    .about__inner
+        flex-direction: column
+    .about__img 
+        max-width: 100%
+        min-height: auto
+        margin-left: 0
+    .about__text 
+        width: 100%
+        margin: 50px auto 0
+    .about__cards-col4,
+    .price__cards 
+        justify-content: space-evenly
+        flex-wrap: wrap
+    .plan-description
+        padding-top: 0
+
+
+@media (max-width: 900px)
+    .plan__content-inner
+        flex-direction: column
+        .plan__content-img
+            max-width: 100%
+            margin-left: 0
+            min-height: auto
+    .plan__bottom-inner
+        flex-direction: column
+        align-items: center
+        .plan__bottom-subtitle::before
+            top: 48px
+            left: 50%
+            transform: rotate(90deg)
+    .slider__wrapper 
+        padding-bottom: 100px
+
+@media (max-width: 768px)
+    .header__title
+        font-size: 36px
+        line-height: 50px
+    .header__subtitle,
+    .header__subtitle b
+        font-size: 20px  
+    .header__subtitle b
+        margin-top: 0      
+    .plan__top-desc
+        font-size: 18px
+    .plan__top-desc:first-child::before
+        display: none
+    .plan__content-number
+        font-size: 50px
+    .plan__content-title
+        font-size: 30px
+    .plan__content-subtitle
+        font-size: 18px
+    .plan__bottom-title
+        font-size: 30px
+    .plan__bottom-subtitle
+        font-size: 18px
+    .about__text-name
+        font-size: 30px
+    .about__text-item
+        font-size: 18px
+    .about__text-item--little
+        font-size: 16px
+    .quote
+        min-height: 600px
+    .quote__text
+        max-width: 262px
+        font-size: 18px
+    .quote__name
+        font-size: 25px
+        &::after
+            right: 150px
+    .plan-description
+        padding-bottom: 50px
+    .plan-description__row1,
+    .plan-description__row2, 
+    .plan-description__row3, 
+    .plan-description__row4, 
+    .plan-description__row5
+        flex-direction: column
+        .plan-description__img
+            margin: 0 0 30px
+            width: 100%
+    .price .cards__item-title
+        font-size: 30px
+    .price .cards__item-subtitle
+        font-size: 18px
+
+@media (max-width: 560px)
+    .quote 
+        min-height: 470px
+    .quote__text 
+        padding-top: 0
+        max-width: 100%
+        text-align: center
+        margin-bottom: 0
+    .quote__name
+        text-align: center
+        &::after
+            display: none
+
+@media (max-width: 480px)
+    .plan__top-text
+        position: relative
+        bottom: 0
+        padding: 40px 0
+    .plan__content-number
+        text-align: center
+    .plan__content-title
+        padding: 0
+        text-align: center
+    .plan__content-subtitle
+        padding: 0
+        text-align: center
+    .plan__bottom-title,
+    .plan__bottom-subtitle
+        text-align: center
+    .quote 
+        padding: 30px 0
+        background: none
+        min-height: auto
+    .quote__text
+        margin-bottom: 10px
+    .slider__wrapper 
+        padding-bottom: 50px

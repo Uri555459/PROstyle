@@ -1,0 +1,60 @@
+.price 
+    padding-bottom: 20px
+    &__cards 
+        display: flex
+        justify-content: space-between
+    .cards__item 
+        width: 100%
+        max-width: 350px
+        margin-bottom: 40px
+        &-text 
+            padding-left: 14px
+            padding-top: 20px
+        &-title 
+            font-size: 36px
+            font-weight: 700
+            margin-bottom: 7px
+        &-subtitle 
+            font-size: 20px
+            font-weight: 700
+            margin-bottom: 10px
+        &-list li
+            padding-left: 10px
+            position: relative
+            margin: 5px 0
+            &::before
+                content: ""
+                display: block
+                width: 4px
+                height: 4px
+                border-radius: 50%
+                background: #9239df
+                position: absolute
+                top: 10px
+                left: 0
+
+        &_price 
+            font-size: 18px
+            font-weight: 500
+            line-height: 20px
+            margin-bottom: 32px
+            span:first-child
+                color: #ff0000
+                font-weight: 400
+                text-decoration: line-through
+            span:last-child
+                font-weight: 700;
+                text-decoration: underline
+
+        &-btn
+            display: block
+            width: 100%
+            text-align: center
+
+
+
+
+
+
+
+

@@ -1,0 +1,71 @@
+.slider__wrapper
+    padding-bottom: 220px
+.slider
+
+    &__item
+        padding: 49px 40px 50px 60px
+        background-image: linear-gradient(#2f2e41 0%, #1a182e 100%)
+        border-radius: 50px 0 0 0
+    &__img
+        width: 141px
+        height: 141px
+        border-radius: 50%
+        overflow: hidden
+        margin-bottom: 25px
+    &__text
+        color: $white
+        font-size: 18px
+        font-weight: 400
+        line-height: 22px
+        padding-bottom: 24px
+        position: relative
+        &::after
+            content: ""
+            display: block
+            width: 100%
+            max-width: 502px
+            height: 1px
+            background: $white
+            position: absolute
+            left: 0
+            bottom: 0
+        b
+            font-weight: 700
+    &__name-inner
+        display: flex
+        justify-content: space-between
+        margin-top: 25px
+        flex-wrap: wrap
+    &__name,
+    &__package
+        color: $white
+        font-size: 18px
+        font-weight: 300
+        line-height: 30px
+
+    &__button-inner
+        width: 120px
+        display: flex
+        justify-content: space-between
+        margin-left: auto
+        margin-top: 5px
+        .slider-prev,
+        .slider-nex
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 52px
+            height: 52px
+            transition: opacity .3s linear
+            cursor: pointer
+            box-shadow: 0 4px 10px rgba(47, 46, 65, 0.58)
+            background: linear-gradient(#ef18f3 0%, #d41ad8 22%, #c8006c 100%)
+            &:hover
+                opacity: .5
+            img 
+                width: 25px
+                height: 10px
+
+        .slider-nex
+            img 
+                transform: rotate(180deg)

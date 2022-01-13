@@ -1,0 +1,98 @@
+.header
+    text-align: center
+    color: $white
+    padding-top: 50px
+    padding-bottom: 135px
+    background: url(../img/header/header-bg.jpg) no-repeat center center
+    background-size: cover
+    position: relative
+    z-index: 1
+    &::after
+        content: ""
+        display: block
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background: rgba(#000, .6)
+        z-index: -1
+
+    &__inner
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+    .social
+        display: flex
+        justify-content: space-between
+        width: 185px
+        margin-bottom: 135px
+
+        &__link
+            width: 33px
+            height: 33px
+            background: $white
+            border-radius: 50%
+            overflow: hidden
+            display: flex
+            justify-content: center
+            align-items: center
+            transition: all .3s linear
+            &:hover
+                 background: linear-gradient(45deg, #ef18f3 0%, #d41ad8 22%, #c8006c 100%)
+
+        &__img
+            &-fb
+                width: 13px
+                height: 20px
+            &-tel
+                width: 15px
+                height: 15px
+            &-inst
+                width: 30px
+                height: 30px
+                transform: translateY(17%)
+            &-vk
+                width: 15px
+                height: 9px
+    .logo
+        width: 195px
+        height: 50px
+
+    &__title
+        width: 310px
+        font-size: 48px
+        font-weight: 700
+        letter-spacing: 1px
+        line-height: 80px
+        position: relative
+        padding-bottom: 5px
+        margin-bottom: 20px
+        &::after
+            content: ""
+            display: block
+            width: 200px
+            height: 1px
+            background: $white
+            position: absolute
+            left: 50%
+            bottom: 0
+            transform: translateX(-50%)
+
+    &__subtitle
+        width: 100%
+        max-width: 565px
+        transform: rotate(0.3199999999999932deg)
+        font-size: 24px
+        font-weight: 300
+        letter-spacing: -1px
+        b
+            display: block
+            color: #f4f4f4
+            font-size: 26px
+            line-height: 40px
+            font-weight: 500
+            margin-top: 15px
+            margin-bottom: 20px
+    &_btn
